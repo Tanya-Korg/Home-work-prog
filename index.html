@@ -11,24 +11,24 @@
             <legend>Персональные данные</legend>
                 <label>Имя
                     <input type="text" name="name" placeholder="Введите имя">
-                </label><br>
+                </label><br><br>
                 
                 <label>Фамилия
                     <input type="text" name="surname" placeholder="Введите фамилию">
-                </label><br>
+                </label><br><br>
             
                 <label>Загрузите фото профиля<br>
                     <input type="file" accept=".jpg">
-                </label><br>
+                </label><br><br>
             
                 <label>Телефон
                     <input type="tel" name="phone" placeholder="+380 ** *** ** **" pattern="/+380[0-9]{9}">
-                </label><br>
+                </label><br><br>
             
             
                 <label>Email
                     <input type="email" name="email" placeholder="Введите email">
-                </label><br>
+                </label><br><br>
             
                 <label>
                     <input type="checkbox" name="agreed" checked>
@@ -43,7 +43,7 @@
                         <option value="blouse">Блуза</option>
                         <option value="jacket">Пиджак</option>
                     </select>
-                </label><br>
+                </label><br><br>
             
                 <label> Состав ткани
                     <select name="fabric">
@@ -58,34 +58,34 @@
                             <option value="1">Альпака</option>
                         </optgroup>
                     </select>
-                 </label><br>
+                 </label><br><br>
             
                 <label title="Выберите количество единиц"> Количество
                     <input type="number" name="amount" min="1" max="10" value="1">
-                </label><br>
+                </label><br><br>
             
                 <label title="Выберите цвет">Цвет
                     <input type="color" name="color">
-                </label><br>
+                </label><br><br>
             
-                <label>Дата и время доставки
-                    <input type="datetime" name="datetime">
-                </label><br>
+                <label>Дата доставки<br>
+                    <input type="date" name="date">
+                </label><br><br>
 
             <p>Способ доставки</p>
                 <label>
                     <input type="radio" name="delivery" value="courier">Доставка курьером 
-                </label><br>
+                </label><br><br>
             
                 <label>
                     <input type="radio" name="delivery" value="post">Доставка "Новой почтой"
-                </label><br>
+                </label><br><br>
             
                 <label>Комментарий к заказу<br>
                     <textarea name="comment" rows="10" cols="30"></textarea>
                 </label>
         </fieldset>
-        <input type="image" src="img/button.jpg" alt="Заказать">
+        <input type="submit" value="Заказать">
         
     </form>
    
