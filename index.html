@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Формы</title>
+    </head>
+<body>
+    <form action="getform.php" method="get" autocomplete>
+        
+        <fieldset>
+            <legend>Персональные данные</legend>
+                <label>Имя
+                    <input type="text" name="name" placeholder="Введите имя">
+                </label><br>
+                
+                <label>Фамилия
+                    <input type="text" name="surname" placeholder="Введите фамилию">
+                </label><br>
+            
+                <label>Загрузите фото профиля<br>
+                    <input type="file" accept=".jpg">
+                </label><br>
+            
+                <label>Телефон
+                    <input type="tel" name="phone" placeholder="+380 ** *** ** **" patern="/+380[0-9]{9}">
+                </label><br>
+            
+                <label>Email
+                    <input type="email" name="email" placeholder="Введите email">
+                </label><br>
+            
+                <label>
+                    <input type="checkbox" name="agreed" checked>
+                Присылать уведомления о новых товарах мне на почту </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Информация о заказе</legend>
+                <label>Товар
+                    <select name="clothes" size="3" multiple>
+                        <option value="pants">Боюки</option>
+                        <option value="blouse">Блуза</option>
+                        <option value="jacket">Пиджак</option>
+                    </select>
+                </label><br>
+            
+                <label> Состав ткани
+                    <select name="fabric">
+                        <optgroup label="Хлопок">
+                            <option value="100">Хлопок 100%</option>
+                            <option value="50">Хлопок 50%</option>
+                            <option value="10">Хлопок 10%</option>
+                        </optgroup>
+                        <optgroup label="Шерсть">
+                            <option value="1">Ангора</option>
+                            <option value="1">Меринос</option>
+                            <option value="1">Альпака</option>
+                        </optgroup>
+                    </select>
+                 </label><br>
+            
+                <label title="Выберите количество единиц"> Количество
+                    <input type="number" name="amount" min="1" max="10" value="1">
+                </label><br>
+            
+                <label title="Выберите цвет">Цвет
+                    <input type="color" name="color">
+                </label><br>
+            
+                <label>Дата и время доставки
+                    <input type="date" name="date">
+                    <input type="time" name="time">
+                </label><br>
+
+            <p>Способ доставки</p>
+                <label>
+                    <input type="radio" name="delivery" value="courier">Доставка курьером 
+                </label><br>
+            
+                <label>
+                    <input type="radio" name="delivery" value="post">Доставка "Новой почтой"
+                </label><br>
+            
+                <label>Комментарий к заказу<br>
+                    <textarea name="comment" rows="10" cols="30"></textarea>
+                </label>
+        </fieldset>
+        <input type="image" src="img/button.jpg">
+        
+    </form>
+   
+</body>
+</html>
