@@ -5,7 +5,7 @@
         <title>Формы</title>
     </head>
 <body>
-    <form action="getform.php" method="get" autocomplete>
+    <form action="getform.php" method="get" autocomplete="on">
         
         <fieldset>
             <legend>Персональные данные</legend>
@@ -22,7 +22,7 @@
                 </label><br>
             
                 <label>Телефон
-                    <input type="tel" name="phone" placeholder="+380 ** *** ** **" patern="/+380[0-9]{9}">
+                    <input type="tel" name="phone" placeholder="+380 ** *** ** **" pattern="/+380[0-9]{9}">
                 </label><br>
             
             
@@ -69,8 +69,7 @@
                 </label><br>
             
                 <label>Дата и время доставки
-                    <input type="date" name="date">
-                    <input type="time" name="time">
+                    <input type="datetime" name="datetime">
                 </label><br>
 
             <p>Способ доставки</p>
@@ -86,7 +85,7 @@
                     <textarea name="comment" rows="10" cols="30"></textarea>
                 </label>
         </fieldset>
-        <input type="image" src="img/button.jpg">
+        <input type="image" src="img/button.jpg" alt="Заказать">
         
     </form>
    
