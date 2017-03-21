@@ -1,0 +1,23 @@
+.first-block,
+.second-block,
+.third-block,
+.fourth-block{
+	height: 140px;
+}
+.first-block div,
+.second-block div,
+.third-block div,
+.fourth-block div{
+	width: 100px;
+	height: 100px;
+	border: 1px solid #2F4F4F;
+	background-color: #F0F8FF;
+	float: right;
+	margin-left: 35px;
+}
+
+.green:hover{
+	border: 2px solid #2F4F4F;
+	background-color: #708090;
+}
+
